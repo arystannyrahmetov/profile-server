@@ -8,6 +8,6 @@ dotenv.config();
 export class MainController {
     @Get('/')
     getAll () {
-        return 'CD test...';
+        return 'CD test..';
     }
 }
