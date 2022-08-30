@@ -4,14 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "_test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/index.js",
-    "build": "npm run tsc",
-    "tsc": "./node_modules/typescript/bin/tsc",
-    "prestart": "npm run build",
-    "postinstall": "npm run tsc",
-    "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "worker": "npm run start"
+    "_build": "npm run tsc",
+    "tsc": "tsc",
+    "_prestart": "npm run build",
+    "postinstall": "tsc",
+    "_server:watch": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
